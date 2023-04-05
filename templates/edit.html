@@ -1,0 +1,44 @@
+{% extends "base.html" %} {%block content%} {% load static %}
+<div class="body">
+  <div class="header">
+    <img class="img" src="{% static 'images/twitter.png' %}" />
+    <h1 class="Home">Edit</h1>
+  </div>
+  <div class="input-area">
+    <img class="img" src="{% static 'images/user-profile-icon .png' %}" />
+
+    <form
+      class="form"
+      action="/edit/{{posts.id}}"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      {%csrf_token%}
+      <input
+        value="{{posts.name}}"
+        class="Name"
+        type="text"
+        name="name"
+        placeholder="Your name"
+        maxlength="14"
+      />
+      <br />
+      <textarea
+        class="info"
+        name="body"
+        placeholder="What's happening?"
+        maxlength="140"
+      >
+{{posts.body}} </textarea
+      >
+      <br />
+      <input class="upload" type="file" value="Choose File" />
+      {% if posts.image.url %}
+      <img class="anyimg" src="{{ posts.image.url }}" />
+      {% endif %}
+      <input class="submit" type="submit" value="UPDATE" />
+    </form>
+  </div>
+</div>
+
+{%endblock%}

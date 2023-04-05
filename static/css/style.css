@@ -1,0 +1,147 @@
+.body {
+  width: 70%;
+  margin-left: 20%;
+  border-left: 0.1vw solid gray;
+  border-right: 0.1vw solid gray;
+  border-top: 0.1vw solid gray;
+  border-bottom: 2vw solid rgba(0, 0, 0, 0.219);
+}
+.body1 {
+  width: 70%;
+  margin-left: 20%;
+  border-left: 0.1vw solid gray;
+  border-right: 0.1vw solid gray;
+  border-bottom: 0.1vw solid gray;
+}
+
+.Home {
+  text-align: left;
+  color: rgb(150, 91, 91);
+  font-size: 3vw;
+  padding: 1vw;
+  margin: 0;
+}
+
+.form {
+  width: 79%;
+}
+
+.Name {
+  margin-top: 0.1vw;
+  font-size: 2vw;
+  width: 100%;
+  background-color: rgb(224, 248, 248);
+  border: 0;
+  border-radius: 0.6vw;
+  padding: 1vw;
+}
+
+.info {
+  width: 100%;
+  margin-top: 1vw;
+  border: 0;
+}
+
+.submit {
+  padding: 1vw;
+  font-size: 1.5vw;
+  background-color: #00acee;
+  color: white;
+  border: 0;
+  font-weight: bold;
+}
+
+.img {
+  width: 5vw;
+  height: 5vw;
+  margin-right: 5vw;
+}
+.header {
+  display: flex;
+  padding: 2vw;
+  width: 94%;
+  border-bottom: 0.1vw solid gray;
+}
+
+.input-area {
+  display: flex;
+  padding: 2vw;
+  width: 100%;
+}
+.Post {
+  display: flex;
+  padding: 2vw;
+  width: 100%;
+}
+.user {
+  font-size: 3vw;
+  font-weight: bold;
+}
+.time {
+  font-size: 1.5vw;
+  color: gray;
+}
+.details {
+  font-size: 2vw;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.anyimg {
+  width: 90%;
+  padding: 2vw;
+}
+
+
+.upload{
+  font-size:2vw ; 
+  border: 0.2vw solid gray ; 
+  border-radius: 0.5vw;
+}
+
+
+.like{
+  color: red;
+  background-color: white;
+  border: 0;
+  font-size: 2vw;
+  margin-left: 1.2vw;
+}
+
+
+.count{
+  font-size: 2vw;
+}
+
+
+.menu_icon{
+
+  width: 4vw;
+  position:absolute ;
+  right: 13vw ;
+  
+
+}
+
+.menu_info{
+
+  display: none;
+  position: absolute;
+  right: 11.5vw;
+  margin-top:3.5vw ; 
+  border: 0.1vw solid gray;
+  padding: 0.3vw 0.5vw ;
+  font-size: 1vw;
+  border-radius: 1vw;
+
+}
+.extra{
+  color: rgba(25, 25, 216, 0.767);
+  font-size: 2vw;
+  font-weight: bold;
+  padding: 2vw;
+
+}

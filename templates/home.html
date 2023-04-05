@@ -1,0 +1,71 @@
+{% extends "base.html" %} {%block content%} {% load static %}
+
+<div class="body">
+  <div class="header">
+    <img class="img" src="{% static 'images/twitter.png' %}" />
+    <h1 class="Home">Home</h1>
+  </div>
+  <div class="input-area">
+    <img class="img" src="{% static 'images/user-profile-icon .png' %}" />
+
+    <form class="form" action="/" method="POST" enctype="multipart/form-data">
+      {%csrf_token%}
+      <input
+        class="Name"
+        type="text"
+        name="name"
+        placeholder="Your name"
+        maxlength="14"
+        required
+      />
+      <br />
+      <textarea
+        class="info"
+        name="body"
+        placeholder="What's happening?"
+        maxlength="140"
+        required
+      ></textarea
+      ><br />
+      <input class="upload" type="file" value="Choose File" name="image" />
+      <input class="submit" type="submit" value="Tweet" />
+    </form>
+  </div>
+</div>
+
+{%for post in posts %}
+<div class="body1">
+  <div class="Post">
+    <img class="img" src="{% static 'images/user-profile-icon .png' %}" />
+    <img class="menu_icon js-menu-icon" src="{% static 'images/menu.png' %}" />
+
+    <div class="menu_info">
+      <a class="extra"href="/delete/{{post.id}}">Delete</a> <br>
+      <a class="extra"href="/edit/{{post.id}}">Edit</a>
+    </div>
+
+    <div class="post">
+      <ul>
+        <li class="user">{{post.name}}</li>
+        <li class="time">{{post.created_at}}</li>
+        <li class="details">{{post.body}}</li>
+      </ul>
+      {% if post.image.url %}
+      <img class="anyimg" src="{{ post.image.url }}" />
+      {% endif %}
+
+      <form class="count" action="{%url 'like' post.pk %}">
+        <button class="like" type="submit">&#10084;</button>
+        {{post.likes}}
+      </form>
+    </div>
+  </div>
+</div>
+{%endfor%}
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"
+></script>
+<script src="{% static 'js/script.js' %}"></script>
+{%endblock%}
