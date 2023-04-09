@@ -29,14 +29,14 @@
         placeholder="What's happening?"
         maxlength="140"
       >
-{{posts.body}} </textarea>
+{{posts.body}} </textarea
       >
       <br />
-      <input class="upload" type="file" value="Choose File" />
+      <input class="upload" type="file" value="Choose File" name="image" />
       {% if posts.image.url %}
-      <img class="anyimg" name="image" src="{{ posts.image.url }}" />
+      <img class="anyimg" src="{{ posts.image.url }}" />
       {% endif %}
-      <a href="/"><button class="submit"> Cancel </button></a>
+      <a href="/"><button class="submit">CANCEL</button></a>
       <input class="submit" type="submit" value="UPDATE" />
     </form>
   </div>

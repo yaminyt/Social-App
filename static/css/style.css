@@ -144,6 +144,7 @@ ul {
   font-size: 2vw;
   font-weight: bold;
   padding: 2vw;
+  margin-bottom: 5vw;
 
 }
 .extra2{
@@ -152,4 +153,9 @@ ul {
   font-weight: bold;
   padding: 2vw;
 
+}
+
+.menu_info a:hover{
+  color: orange;
+  font-size: 2.5vw;
 }
