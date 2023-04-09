@@ -24,6 +24,7 @@
         name="body"
         placeholder="What's happening?"
         maxlength="140"
+        rows="4"
         required
       ></textarea
       ><br />
@@ -40,8 +41,8 @@
     <img class="menu_icon js-menu-icon" src="{% static 'images/menu.png' %}" />
 
     <div class="menu_info">
-      <a class="extra"href="/delete/{{post.id}}">Delete</a> <br>
-      <a class="extra"href="/edit/{{post.id}}">Edit</a>
+      <a class="extra" href="/delete/{{post.id}}">Delete</a> <br>
+      <a class="extra2" href="/edit/{{post.id}}">Edit</a>
     </div>
 
     <div class="post">

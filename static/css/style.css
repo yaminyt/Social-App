@@ -40,6 +40,7 @@
   width: 100%;
   margin-top: 1vw;
   border: 0;
+  font-size: 2vw;
 }
 
 .submit {
@@ -139,6 +140,13 @@ ul {
 
 }
 .extra{
+  color: rgba(25, 25, 216, 0.767);
+  font-size: 2vw;
+  font-weight: bold;
+  padding: 2vw;
+
+}
+.extra2{
   color: rgba(25, 25, 216, 0.767);
   font-size: 2vw;
   font-weight: bold;
