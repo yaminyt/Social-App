@@ -5,7 +5,7 @@
 
 
 
-Checkout [Live Demo](https://social-app.yamintawhid.repl.co/).
+Checkout [Live Demo](https://social-app-1.yamintawhid.repl.co/).
 
 Feel Free to Post Anything In My Social Media App.
 
